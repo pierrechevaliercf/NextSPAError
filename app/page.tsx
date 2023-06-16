@@ -10,9 +10,15 @@ export default async function Home() {
 
   const result = await fetchData();
 
+  const longComputation = [];
+  for (let i = 0; i <= 10000; i++) {
+    longComputation.push(<div key={i}>Test {i}</div>);
+  }
+
   return (
     <main className="flex flex-col items-center justify-between bg-yellow-300 w-full h-80">
       LOADING ENDED {result}
+      {longComputation}
     </main>
   )
 }
