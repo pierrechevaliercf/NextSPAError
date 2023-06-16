@@ -15,7 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <header><h1 className="bg-red-500 flex items-center justify-center w-full h-60">TOP</h1></header>
       <body className={inter.className}>{children}</body>
+      <footer><h1 className="bg-blue-500 flex items-center justify-center w-full h-60">BOTTOM</h1></footer>
     </html>
   )
 }
