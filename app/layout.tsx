@@ -1,7 +1,5 @@
 import Link from 'next/link'
-import './globals.css'
 import { Inter } from 'next/font/google'
-import { init as initApm } from '@elastic/apm-rum';
 import { InitApm } from './InitApm';
 
 const inter = Inter({ subsets: ['latin'] })
